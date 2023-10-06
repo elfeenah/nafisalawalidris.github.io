@@ -48,6 +48,11 @@
 .footer-social-media a:hover {
     color: #4b004b; /* Darker purple color on hover */
 }
+/* Add this CSS to your existing styles */
+.small-button {
+    font-size: 0.8em; /* Adjust the font size as needed */
+    padding: 0.5em 1em; /* Adjust the padding as needed */
+}
 
 /* General Body Styles */
 body {
