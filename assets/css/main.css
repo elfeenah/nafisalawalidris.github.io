@@ -334,34 +334,32 @@ p {
     background-color: #4b004b; /* Darker purple color on hover */
 }
 
-/* CSS for Skills Section */
+/* Skills Section */
 .skills-section {
-	background-color: #f9f9f9;
-	padding: 60px 0;
-	text-align: center;
-  }
-  
-  .skill-heading {
-	font-size: 2em;
-	margin-bottom: 30px;
-  }
-  
-  .skills-icons {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-  }
-  
-  .skills-icons i,
-  .skills-icons span {
-	margin: 20px;
-	color: #5d0467;
-  }
-  
-  .skills-icons i {
-	font-size: 4em;
-  }
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skills-icons i, .skills-icons span {
+    margin: 20px;
+    color: #007bff;
+}
+
+.skill-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
 
 
 /* CSS styles for certification section */
