@@ -1,10 +1,16 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Retrieve form data
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $subject = $_POST["subject"];
-    $message = $_POST["message"];
+    // Retrieve and sanitize form data
+    $name = sanitizeInput($_POST["name"]);
+    $email = sanitizeInput($_POST["email"]);
+    $subject = sanitizeInput($_POST["subject"]);
+    $message = sanitizeInput($_POST["message"]);
+
+    // Validate email address
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email address.";
+        exit;
+    }
 
     // Prepare email message for admin
     $toAdmin = "elfeenah413@gmail.com"; // Update this to your desired email address
@@ -27,5 +33,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 } else {
     echo "Invalid request.";
+}
+
+function sanitizeInput($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
 ?>
