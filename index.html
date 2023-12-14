@@ -15,9 +15,6 @@
         div {
             overflow: hidden;
         }
-        section {
-            background-color: red;
-        }
 
         .profile-image {
             float: inline-start;
@@ -25,9 +22,9 @@
         }
 
         .profile-image img {
-            inline-size: 300px;
-            /* Adjust the width as needed */
-            block-size: auto;
+            width: 100%;
+            max-width: 300px; /* Adjust the maximum width as needed */
+            height: auto;
             border-radius: 30%;
         }
 
@@ -35,15 +32,6 @@
             overflow: hidden;
             /* Clear the float */
         }
-
-        /* .m_view{
-                flex-direction: column;
-            }
-        .m_view > div{
-            background-color: blue;
-            flex-shrink: 0;
-            width: 10px;
-        } */
 
         /* Increase the size of social media icons */
         .social-links a i {
@@ -70,11 +58,17 @@
         .button {
             margin-block-start: 5px;
         }
+
+        /* Media Query for Mobile Devices */
+        @media only screen and (max-width: 768px) {
+            .profile-image img {
+                max-width: 100%; /* Adjust for mobile devices */
+            }
+        }
     </style>
 </head>
 
 <body class="is-preload">
-
     <nav id="nav" class="nav">
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
