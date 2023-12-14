@@ -60,8 +60,8 @@ body {
     margin-block-end: 10px;
 }
 
-.header h3 {
-    font-size: 24px;
+.header h2 {
+    font-size: 24px; /* Changed h3 to h2 for consistency */
     margin-block-end: 20px;
 }
 
@@ -150,3 +150,4 @@ ul.container {
 
     /* Add additional styles for navigation items if needed */
 }
+
