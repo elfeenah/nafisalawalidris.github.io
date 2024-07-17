@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Kt4QsZTF+6Z41Wbl6jN/A6O4HJ2Zf3uIfLsI9z2n9/CkW2FZj5fl4kPVA5bY1ZfS" crossorigin="anonymous">

@@ -1,577 +1,878 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="utf-8">
     <title>Nafisa Lawal Idris Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha384-Kt4QsZTF+6Z41Wbl6jN/A6O4HJ2Zf3uIfLsI9z2n9/CkW2FZj5fl4kPVA5bY1ZfS" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Data Scientist Portfolio" name="keywords">
+    <meta content="Data Scientist Portfolio" name="description">
 
-        /* Additional CSS styles specific to this page */
-        div {
-            overflow: hidden;
-        }
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        .profile-image {
-            float: inline-start;
-            margin-inline-end: 5px;
-        }
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        .profile-image img {
-            width: 100%;
-            max-width: 300px; /* Adjust the maximum width as needed */
-            height: auto;
-            border-radius: 30%;
-        }
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="animate\animate.min.css" rel="stylesheet">
+        <link href="owlcarousel\assets\owl.carousel.min.css" rel="stylesheet">
+        <link href="lightbox\css\lightbox.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="animate\animate.min.css">
 
-        .header {
-            overflow: hidden;
-            /* Clear the float */
-        }
-
-        /* Increase the size of social media icons */
-        .social-links a i {
-            font-size: 20px;
-        }
-
-        /* Adjust the font size and margins for the text elements */
-        .header h1 strong {
-            font-size: 40px;
-        }
-
-        .header h2 {
-            margin-block-end: 5px;
-        }
-
-        .social-links h4 {
-            margin-block-end: 5px;
-        }
-
-        .social-links a {
-            margin-inline-end: 5px;
-        }
-
-        .button {
-            margin-block-start: 5px;
-        }
-
-        /* Media Query for Mobile Devices */
-        @media only screen and (max-width: 768px) {
-            .profile-image img {
-                max-width: 100%; /* Adjust for mobile devices */
-            }
-        }
-    </style>
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">NLIFolio</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<body class="is-preload">
-    <nav id="nav" class="nav">
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="container">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#certification">Certification</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#conferences">Conferences</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <!-- Home Section -->
-    <article id="top" class="wrapper style1">
-        <div class="container">
-            <div class="content">
-                <div class="profile-image">
-                    <img src="images/Feenah.jpg" alt="Profile Image" width="150" height="150">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#services" class="nav-item nav-link">Services</a>
+                    <a href="#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                    <a href="#booking" class="nav-item nav-link">Bookings</a>
+                    <a href="#media" class="nav-item nav-link">Media</a>
+                    <a href="#features" class="nav-item nav-link">Features</a>
+                    <a href="#blog" class="nav-item nav-link">Blog</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
-                <header class="header">
-                    <h1>Hi, I'm <strong>Nafisa Lawal Idris</strong></h1>
-                    <h2>Data Scientist - Tech Advocate - Mentor</h2>
-                    <div class="social-links">
-                        <h4>Find me on ...</h4>
-                        <a href="https://www.linkedin.com/in/nafisa-lawal-idris/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/FeenahNafeesah" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://github.com/nafisalawalidris" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://medium.com/@nafisaidris413" target="_blank"><i class="fab fa-medium"></i></a>
-                        <a href="https://www.kaggle.com/nafisalawalidris" target="_blank"><i
-                                class="fab fa-kaggle"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Profile Start -->
+    <div class="profile" id="home">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="profile-content">
+                        <div class="profile-text">
+                            <p>Hello, I am</p>
+                            <h1>Nafisa Lawal Idris</h1>
+                            <h2></h2>
+                            <div class="typed-text">Data Scientist, Tech Advocate, Mentor</div>
+                        </div>
+                        <div class="profile-btn">
+                            <a class="btn" href="">Hire Me</a>
+                            <a class="btn" href="">Contact Me</a>
+                        </div>
+                        <div class="social-links">
+                            <h4>Find me on ...</h4>
+                            <a href="https://www.linkedin.com/in/nafisa-lawal-idris/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com/FeenahNafeesah" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/nafisalawalidris" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://medium.com/@nafisaidris413" target="_blank"><i class="fab fa-medium"></i></a>
+                            <a href="https://www.kaggle.com/nafisalawalidris" target="_blank"><i class="fab fa-kaggle"></i></a>
+                        </div>
                     </div>
-                    <a href="#contact" class="button large scrolly">Get in touch with me</a>
-                </header>
-            </div>
-        </div>
-    </article>
-
-    <!-- About Section -->
-    <article id="about" class="wrapper style2">
-        <div class="container" style="width: 100%; margin: 0;">
-            <div class="row" style="width: 100%;">
-                <div class="col-16 col-6-medium" style="width:100%;">
-                    <h3>About Me</h3>
-                    <p style="text-align: center; width: 80%; margin:auto">
-                        I am a passionate and versatile data scientist with over 2 years of experience in EdTech and extended reality (XR) companies. I bring a wealth of expertise in a variety of technologies, including Python, R, SQL, HTML, CSS, JavaScript and Excel. I am also a passionate Bitcoin enthusiast and advocate for using cutting-edge technologies to tackle complex problems.
-                        In my multifaceted roles as a data scientist, advisory board member, program manager, mentor, community manager, global ambassador, public speaker and consultant/advisor, I play a pivotal role in driving data-informed decision-making and advocating for positive change in the tech industry. I am committed to bridging gaps, inspiring positive transformations, and leading the way toward a more inclusive and innovative tech landscape.
-                        My mission is to merge the realms of data science, artificial intelligence and blockchain technology to make a meaningful impact on the world. I am excited to collaborate with others and share my knowledge and expertise to create a better future for all.
-                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="profile-image">
+                        <img src="images/Feenah.jpg" alt="profile Image">
+                    </div>
                 </div>
             </div>
         </div>
-    </article>
+    </div>
 
+    <!-- Profile End -->
 
-    <!-- Resume Section -->
-    <article id="resume" class="wrapper style1">
-        <div class="container">
-            <h2>Resume</h2>
-            <p>Click the link below to download my resume</p>
-            <a href="C:\Users\USER\Downloads\Nafisa Lawal Idris\CV 2023 Otta.pdf" download="CV_July_2023_EDITTED.pdf"
-                class="button primary small-button">Download Resume</a>
-        </div>
-    </article>
-
-    <!-- Skills Section -->
-    <article class="skills-section" id="skills">
-        <div class="container">
-            <h2 class="skill-heading">Skills</h2>
-            <div class="skills-icons">
-                <i class="fab fa-html5 fa-4x"></i>
-                <i class="fab fa-css3-alt fa-4x"></i>
-                <i class="fab fa-python fa-4x"></i>
-                <i class="fab fa-js fa-4x"></i>
-                <i class="fab fa-tensorflow fa-4x"></i>
-                <i class="fab fa-php fa-4x"></i>
-                <i class="fas fa-database fa-4x"></i>
-                <i class="fas fa-file-excel fa-4x"></i>
-                <i class="fab fa-bitcoin fa-4x"></i>
-                <i class="fab fa-envira fa-4x"></i>
-                <i class="fas fa-database fa-4x"></i>
-                <i class="fas fa-server fa-4x"></i>
-                <i class="fas fa-code-branch fa-4x"></i>
-                <i class="fab fa-git-alt fa-4x"></i>
-                <i class="fab fa-github fa-4x"></i>
-                <span>MongoDB</span>
-                <span>NumPy</span>
-                <span>Pandas</span>
-                <span>Scikit-Learn</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Jupyter Notebooks</span>
-                <span>Keras</span>
-                <span>PyTorch</span>
+ <!-- About Start -->
+ <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="images\Nafeesah.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-header text-left">
+                        <p>Learn About Me</p>
+                        <h2>3 Years Experience</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I am a dedicated Data Scientist with over three years of experience in Software-as-a-Service, FinTech, IT Solutions and EdTech. I have led diverse teams and hold a Bachelor's degree in Statistics from Ahmadu Bello University, Zaria and a Postgraduate Diploma in Management from the Nigeria Defence Academy. I am from Tureta LGA Sokoto State in Northern Nigeria, I am a passionate advocate for diversity and inclusion in the technology sector.
+                            <br><br>
+                            My commitment to mentorship and thought leadership is evident through my involvement with numerous initiatives. I have served as a mentor with ADPList, KaggleX, She Connect Africa, Google Women Techmakers Ilorin, Black Girls in Tech, VC4A, Women in Tech - Global Movement, Women in Tech® Nigeria, FlexiSAF Edusoft Limited and Women in Data Science (WiDS).
+                            <br><br>
+                            I am a Global Ambassador at WomenTech Network, Women in Data Science (WiDS) Worldwide, a Consultant/Advisor at FATE Foundation and an Advisory Board Member at Spendo Technologies. I am honoured to be recognised among the She Leads Africa Top 50 Rising Motherland Moguls of 2024.
+                            <br><br>
+                            I actively contribute to Blockchain open-source projects and advocate for gender diversity in tech, focusing on empowering women in underrepresented regions. I am a Professional Member of the Professional Statisticians Society of Nigeria (PSSN), a Member of ForbesBLK, a Member of Black in AI and a Certified member of the Chartered Institute of Statisticians of Nigeria (CISON).
+                        </p>
+                    </div>
+                    <div class="row stats">
+                        <div class="col-md-6">
+                            <div class="stat-item">
+                                <i class="fa fa-award"></i>
+                                <h2>3+</h2>
+                                <p>Awards Won</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stat-item">
+                                <i class="fa fa-users"></i>
+                                <h2>1000+</h2>
+                                <p>Mentees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn" href="#contact">Contact Me</a>
+                </div>
             </div>
         </div>
-    </article>
+    </div>
+</div>
+<!-- About End -->
 
-
-    <!-- Certifications Section -->
-    <article id="certification" class="wrapper style1">
-        <h3>Certifications</h3>
-        <div class="certificate-container">
-            <img src="images/Coursera IBM Data Science Certificate.jpg" alt="Coursera IBM Data Science Certificate">
-            <img src="images/Datacamp Professional Data Scientist Certificate.jpg"
-                alt="Datacamp Professional Data Scientist Certificate">
-            <img src="images/UTIVA Certificate DSF.jpg" alt="UTIVA Certificate DSF">
-            <img src="images/NITDAAIProfessional_Badge20230802-28-e7v4wc.jpg" alt="NITDAAI Professional Badge">
-            <img src="images/Qala Mastering Bitcoin Course.png" alt="Qala Mastering Bitcoin Course">
-            <img src="images/Qala Bitcoin Protocol Development Course.png"
-                alt="Qala Bitcoin Protocol Development Course">
-            <img src="images/NSA Professional Membership.jpg" alt="NSA Professional Membership">
-            <img src="images/PSSN Professional Membership.jpg" alt="PSSN Professional Membership">
-        </div>
-        <!-- <article id="next-section" class="wrapper style2"></article> -->
-    </article>
-
-
-    <!-- Projects Section -->
-    <article id="projects" class="wrapper style2">
-        <div class="container">
-            <header>
-                <h2>Projects</h2>
-            </header>
-            <div class="column">
-                <!-- Project 1 -->
-                <div class="col-3 col-5-small">
-                    <section class="box style1">
-                        <img src="images\Google Play Store apps and reviews.jpg" alt="Project 1 Image" />
-                        <h3>Android App Market</h3>
-                        <p>With the rapid growth of mobile apps, understanding the Android app market is essential for
-                            businesses...</p>
-                        <a href="https://github.com/elfeenah/Google-Play-Store-Apps-and-Reviews/tree/main"
-                            target="_blank" class="button">View Project</a>
-                    </section>
+       <!-- Services Start -->
+    <div class="services" id="services">
+        <div class="container-fluid">
+            <div class="section-header text-center">
+                <div class="service" id="service">
+                    <div class="container">
+                        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>What I Do</p>
+                <h2>My Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data Analysis and Visualisation</h3>
+                        <p>Transform raw data into insightful visualisations and comprehensive reports to drive informed business decisions.</p>
+                    </div>
                 </div>
-                <!-- Project 2 -->
-                <div class="col-3 col-5-small">
-                    <section class="box style1">
-                        <img src="images\Analysing Netflix Movie Durations.jpg" alt="Project 2 Image" />
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-robot"></i>
+                        <h3>Machine Learning and AI Solutions</h3>
+                        <p>Develop and deploy machine learning models to predict trends, automate processes and uncover hidden patterns in data.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-database"></i>
+                        <h3>ETL and Data Warehousing</h3>
+                        <p>Design and implement efficient ETL pipelines and data warehousing solutions to ensure seamless data flow and storage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Data Science Career Coach & Mentor</h3>
+                        <p>Provide personalised career coaching and mentoring to help aspiring data scientists navigate their career paths and achieve their professional goals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Data-related Consultations & Training</h3>
+                        <p>Offer expert consultations and training sessions on various data-related topics to enhance your team's data capabilities and understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+        
+<!-- Experience Start -->
+<div class="experience" id="experience">
+    <div class="container">
+        <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>My Resume</p>
+            <h2>Working Experience</h2>
+        </header>
+        <div class="timeline">
+            <!-- Data Scientist & Growth Officer at Approvam -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Jun 2024 - Present</div>
+                    <h2>Data Scientist & Growth Officer</h2>
+                    <h4>Approvam · Full-time</h4>
+                    <p>Berlin, Germany · Remote</p>
+                </div>
+            </div>
+
+            <!-- Data Analyst at Bitnob -->
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.2s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Apr 2024 - Jun 2024</div>
+                    <h2>Data Analyst</h2>
+                    <h4>Bitnob · Contract</h4>
+                    <p>Lagos State, Nigeria · Remote</p>
+                </div>
+            </div>
+
+            <!-- Team Lead Data Scientist at Greysoft Technologies -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.3s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Apr 2022 - Present</div>
+                    <h2>Team Lead Data Scientist</h2>
+                    <h4>Greysoft Technologies · Full-time</h4>
+                    <p>Kaduna State, Nigeria · Hybrid</p>
+                </div>
+            </div>
+
+            <!-- Data Scientist at CoLab Innovation Hub -->
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.4s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Nov 2020 - Dec 2021</div>
+                    <h2>Data Scientist</h2>
+                    <h4>CoLab Innovation Hub, Kaduna · Full-time</h4>
+                    <p>Kaduna, Nigeria · On-site</p>
+                </div>
+            </div>
+
+            <!-- Data Analyst at Startup Arewa -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.5s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Sep 2019 - Oct 2020</div>
+                    <h2>Data Analyst</h2>
+                    <h4>Startup Arewa · Full-time</h4>
+                    <p>Abuja, Federal Capital Territory, Nigeria · Hybrid</p>
+                </div>
+            </div>
+
+            <!-- Statistical Data Analyst at Universal Learning Solutions -->
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.6s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Apr 2018 - Mar 2021</div>
+                    <h2>Statistical Data Analyst</h2>
+                    <h4>Universal Learning Solutions · Contract</h4>
+                    <p>Sokoto State · Remote</p>
+                </div>
+            </div>
+
+            <!-- Data Entry at National Teachers' Institute -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.7s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Jun 2015 - Nov 2015</div>
+                    <h2>Data Entry</h2>
+                    <h4>National Teachers' Institute · Internship</h4>
+                    <p>Kaduna, Nigeria · On-site</p>
+                </div>
+            </div>
+
+            <!-- AI Community Surfer at TELUS International AI Data Solutions -->
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.8s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Dec 2022 - Mar 2023</div>
+                    <h2>AI Community Surfer (Search Engine Evaluator)</h2>
+                    <h4>TELUS International AI Data Solutions · Freelance</h4>
+                    <p>County Dublin, Ireland · Remote</p>
+                </div>
+            </div>
+
+            <!-- Trade and Policy Officer (TPO) at Kaduna Investment Promotion Agency - KADIPA -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.9s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Jul 2021 - Dec 2022</div>
+                    <h2>Trade and Policy Officer (TPO)</h2>
+                    <h4>Kaduna Investment Promotion Agency - KADIPA · Full-time</h4>
+                    <p>Kaduna, Nigeria · On-site</p>
+                </div>
+            </div>
+
+            <!-- Founder/CEO at Feenah Exquisite Events -->
+            <div class="timeline-item right wow slideInRight" data-wow-delay="1.0s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Apr 2017 - Jan 2022</div>
+                    <h2>Founder/CEO</h2>
+                    <h4>Feenah Exquisite Events · Seasonal</h4>
+                    <p>Kaduna, Nigeria · Hybrid</p>
+                </div>
+            </div>
+
+            <!-- Founder at Arewa Data Community (ADC) -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="1.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Aug 2023 - Present</div>
+                    <h2>Founder</h2>
+                    <h4>Arewa Data Community (ADC) · Self-employed</h4>
+                    <p>Kaduna State, Nigeria · Hybrid</p>
+                </div>
+            </div>
+
+            <!-- Medical Records Officer at Kakaki Hospital -->
+            <div class="timeline-item right wow slideInRight" data-wow-delay="1.2s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Oct 2018 - Jul 2019</div>
+                    <h2>Medical Records Officer</h2>
+                    <h4>Kakaki Hospital · Full-time</h4>
+                    <p>Kaduna, Nigeria · On-site</p>
+                </div>
+            </div>
+
+            <!-- Secondary Mathematics Teacher at Saadat Memorial International School -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="1.3s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Aug 2017 - Jul 2018</div>
+                    <h2>Secondary Mathematics Teacher</h2>
+                    <h4>Saadat Memorial International School · Internship</h4>
+                    <p>Kaduna, Nigeria · On-site</p>
+                </div>
+            </div>
+
+            <!-- Secondary Mathematics & Computer Teacher at Al Mustapha Academy -->
+            <div class="timeline-item right wow slideInRight" data-wow-delay="1.4s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Oct 2016 - Mar 2017</div>
+                    <h2>Secondary Mathematics & Computer Teacher</h2>
+                    <h4>Al Mustapha Academy · Full-time</h4>
+                    <p>Kaduna, Nigeria · On-site</p>
+                </div>
+            </div>
+
+            <!-- Data Entry at National Teachers' Institute -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="1.5s">
+                <div class="timeline-text">
+                    <div class="timeline-date">Jun 2015 - Nov 2015</div>
+                    <h2>Data Entry</h2>
+                    <h4>National Teachers' Institute · Internship</h4>
+                    <p>Kaduna, Nigeria · On-site</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Experience End -->
+
+<!-- Portfolio Start -->
+<div class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>My Portfolio</p>
+            <h2>My Excellent Portfolio</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul id="portfolio-filter">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-1">Data Analysis and Visualization</li>
+                    <li data-filter=".filter-2">Machine Learning and AI Solutions</li>
+                    <li data-filter=".filter-3">ETL and Data Warehousing</li>
+                    <li data-filter=".filter-4">Web Development</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row portfolio-container">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="images\Google Play Store apps and reviews.jpg" alt="Project 1 Image">
+                    </div>
+                    <div class="portfolio-text">
+                        <h3>NYC Taxi Data Pipeline</h3>
+                        <p>With the rapid growth of mobile apps, understanding the Android app market is essential for businesses...</p>
+                        <a class="btn" href="https://github.com/nafisalawalidris/NYC_Taxi_Data_Pipeline.git" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="images\Analysing Netflix Movie Durations.jpg" alt="Project 2 Image">
+                    </div>
+                    <div class="portfolio-text">
                         <h3>Netflix Movie Durations</h3>
-                        <p>Explore the evolution of movie durations on Netflix, from its beginnings as a DVD rental
-                            service to...</p>
-                        <a href="https://github.com/elfeenah/Investigating-Netflix-Movies-and-Guest-Stars-in-The-Office"
-                            target="_blank" class="button">View Project</a>
-                    </section>
+                        <p>Explore the evolution of movie durations on Netflix, from its beginnings as a DVD rental service to...</p>
+                        <a class="btn" href="https://github.com/elfeenah/Investigating-Netflix-Movies-and-Guest-Stars-in-The-Office" target="_blank">View Project</a>
+                    </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="col-3 col-5-small">
-                    <section class="box style1">
-                        <img src="images\Evolution of Video Games A Deep Dive.jpg" alt="Project 3 Image" />
+            </div>
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="images\Evolution of Video Games A Deep Dive.jpg" alt="Project 3 Image">
+                    </div>
+                    <div class="portfolio-text">
                         <h3>Evolution of Video Games</h3>
                         <p>The gaming industry, valued at over $300 billion, is a constantly evolving landscape...</p>
-                        <a href="https://github.com/elfeenah/When-Was-the-Golden-Age-of-Video-Games-" target="_blank"
-                            class="button">View Project</a>
-                    </section>
+                        <a class="btn" href="https://github.com/elfeenah/When-Was-the-Golden-Age-of-Video-Games-" target="_blank">View Project</a>
+                    </div>
                 </div>
-                <!-- Project 4 -->
-                <div class="col-3 col-5-small">
-                    <section class="box style1">
-                        <img src="images\Sprocket Central Pty Ltd-2.png" alt="Project 3 Image" />
+            </div>
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="images\Sprocket Central Pty Ltd-2.png" alt="Project 4 Image">
+                    </div>
+                    <div class="portfolio-text">
                         <h3>Interactive Data Analysis</h3>
-                        <p>The client is happy with the analysis plan and would like us to proceed. After building the
-                            model, we need to...</p>
-                        <a href="https://github.com/elfeenah/Sprocket-Central-Pty-Ltd-" target="_blank"
-                            class="button">View Project</a>
-                    </section>
+                        <p>The client is happy with the analysis plan and would like us to proceed. After building the model, we need to...</p>
+                        <a class="btn" href="https://github.com/elfeenah/Sprocket-Central-Pty-Ltd-" target="_blank">View Project</a>
+                    </div>
                 </div>
-                <!-- Project 5 -->
-                <div class="col-3 col-5-small">
-                    <section class="box style1">
-                        <img src="images\911 Call Analysis.jfif" alt="Project 3 Image" />
+            </div>
+            <!-- Project 5 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="images\911 Call Analysis.jfif" alt="Project 5 Image">
+                    </div>
+                    <div class="portfolio-text">
                         <h3>911 Call Analysis</h3>
-                        <p>An exploration and visualisation of emergency call data to gain insights into patterns,
-                            trends and important metrics related to emergency incidents...</p>
-                        <a href="https://github.com/elfeenah/911-Call-Analysis" target="_blank" class="button">View
-                            Project</a>
-                    </section>
+                        <p>An exploration and visualization of emergency call data to gain insights into patterns, trends, and important metrics related to emergency incidents...</p>
+                        <a class="btn" href="https://github.com/elfeenah/911-Call-Analysis" target="_blank">View Project</a>
+                    </div>
                 </div>
-                <!-- Project 6 -->
-                <div class="col-3 col-5-small">
-                    <section class="box style1">
-                        <img src="images\HiCi - Africa Food Export-1.png" alt="Project 3 Image" />
+            </div>
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="1.0s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="images\HiCi - Africa Food Export-1.png" alt="Project 6 Image">
+                    </div>
+                    <div class="portfolio-text">
                         <h3>HiCi African Foods</h3>
-                        <p>Analysing and visualising data related to HiCi African Foods' expansion into the European
-                            Union market...</p>
-                        <a href="https://github.com/elfeenah/Sprocket-Central-Pty-Ltd-" target="_blank"
-                            class="button">View Project</a>
-                    </section>
+                        <p>Analysing and visualizing data related to HiCi African Foods' expansion into the European Union market...</p>
+                        <a class="btn" href="https://github.com/elfeenah/Sprocket-Central-Pty-Ltd-" target="_blank">View Project</a>
+                    </div>
                 </div>
-                <!-- Project 7 -->
-                <div class="col-3 col-5-small">
-                    <section class="box style1">
-                        <img src="images\Employee Attrition Control.png" alt="Project 3 Image" />
+            </div>
+            <!-- Project 7 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="1.2s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="images\Employee Attrition Control.png" alt="Project 7 Image">
+                    </div>
+                    <div class="portfolio-text">
                         <h3>Employee Attrition Control</h3>
-                        <p>To analyse and address employee turnover. By leveraging data on existing and former
-                            employees...</p>
-                        <a href="https://github.com/elfeenah/Employee-Attrition-Control" target="_blank"
-                            class="button">View Project</a>
-                    </section>
+                        <p>To analyze and address employee turnover. By leveraging data on existing and former employees...</p>
+                        <a class="btn" href="https://github.com/elfeenah/Employee-Attrition-Control" target="_blank">View Project</a>
+                    </div>
                 </div>
-                <!-- Project 8 -->
-                <div class="col-3 col-5-small">
-                    <section class="box style1">
-                        <img src="images\Recipe.png" alt="Project 3 Image" />
+            </div>
+            <!-- Project 8 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1.4s">
+                <div class="portfolio-wrap">
+                    <div class="portfolio-img">
+                        <img src="images\Recipe.png" alt="Project 8 Image">
+                    </div>
+                    <div class="portfolio-text">
                         <h3>Recipe Site Traffic Prediction</h3>
                         <p>Prediction of high traffic recipes on a recipe website using machine learning...</p>
-                        <a href="https://github.com/elfeenah/Recipe-Site-Traffic-Prediction" target="_blank"
-                            class="button">View Project</a>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </article>
-
-
-
-    <!-- Conferences Section -->
-    <article id="conferences" class="wrapper style3">
-        <div class="container">
-            <header>
-                <h2>Conferences, Webinars, Workshops & Speaking Engagements</h2>
-                <p>As a dedicated professional, I actively participate in technology conferences, engaging workshops,
-                    enlightening webinars, and dynamic speaking engagements. These events serve as invaluable platforms
-                    for me to expand my knowledge, connect with fellow experts, and share insights with the community.
-                    Here are some notable events I've been a part of:</p>
-            </header>
-            <div class="conference-list">
-                <!-- First Row -->
-                <div class="column aln-center">
-                    <!-- Conference 1 -->
-                    <div class="col-3 col-5-medium">
-                        <section class="box style3">
-                            <div class="conference-item">
-                                <img src="images/WTM Zaria.jpg" alt="Conference 1 Image">
-                                <h3>International Women's Day, Zaria</h3>
-                                <p>Women Techmakers, Zaria Conference</p>
-                                <p><strong>Empowering Displaced Girls and Women through Technology and
-                                        Entrepreneurship</strong></p>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- Conference 2 -->
-                    <div class="col-3 col-5-medium">
-                        <section class="box style3">
-                            <div class="conference-item">
-                                <img src="images\WTM Kaduna 2.jfif" alt="Conference 2 Image">
-                                <h3>International Women's Day, Kaduna</h3>
-                                <p>Women Techmakers, Kaduna Conference</p>
-                                <p><strong>Panel Session: IWD 2023 Theme, Digital Equity</strong></p>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- Conference 3 -->
-                    <div class="col-3 col-5-medium">
-                        <section class="box style3">
-                            <div class="conference-item">
-                                <img src="images\WTM Abuja.PNG" alt="Conference 3 Image">
-                                <h3>International Women's Day, Abuja</h3>
-                                <p>Women Techmakers, Abuja Conference</p>
-                                <p><strong>What is Next in Data Science: Exploring Future Trends and Predictions for the
-                                        Next Decade</strong></p>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- Conference 4 -->
-                    <div class="col-3 col-5-medium">
-                        <section class="box style3">
-                            <div class="conference-item">
-                                <img src="images\Women Tech Network Speaking Engagement.png" alt="Conference 4 Image">
-                                <h3>Women Technetwork</h3>
-                                <p>Women in Tech Global, Conference 2023</p>
-                                <p><strong>Building a Successful Career in Data Science as a Woman</strong></p>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <!-- Second Row -->
-                <div class="column aln-center">
-                    <!-- Conference 5 -->
-                    <div class="col-3 col-5-medium">
-                        <section class="box style3">
-                            <div class="conference-item">
-                                <img src="images\Leveraging digital platforms as a woman in tech - Women in Tech Nigeria.png"
-                                    alt="Conference 5 Image">
-                                <h3>Webinar Series</h3>
-                                <p>Women in Tech - Nigeria</p>
-                                <p><strong>Leveraging Digital Platforms as a Woman in Tech</strong></p>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- Conference 6 -->
-                    <div class="col-3 col-5-medium">
-                        <section class="box style3">
-                            <div class="conference-item">
-                                <img src="images\International Day for ICT FASAHA 4.0.jfif" alt="Conference 6 Image">
-                                <h3>Fasaha 4.0</h3>
-                                <p>International Day for Girls in ICT Webinar</p>
-                                <p><strong>Digital Skills For Life</strong></p>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- Conference 7 -->
-                    <div class="col-3 col-5-medium">
-                        <section class="box style3">
-                            <div class="conference-item">
-                                <img src="images\Nafisa WiDA Speaker.jpeg" alt="Conference 7 Image">
-                                <h3>Women in Data Africa (WiDA)</h3>
-                                <p>Speaker Series Webinar</p>
-                                <p><strong>AI and Data Analysis: Exploring the Integration of Artificial Intelligence in
-                                        Data Analysis Processes</strong></p>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- Conference 8 -->
-                    <div class="col-3 col-5-medium">
-                        <section class="box style3">
-                            <div class="conference-item">
-                                <img src="images/Mentor Promotional KaggleX Banner Templates.pptx.png"
-                                    alt="Conference 8 Image">
-                                <h3>Kaggle</h3>
-                                <p>KaggleX Workshop</p>
-                                <p><strong>Harnessing the Power of Artificial Intelligence: Practical Applications and
-                                        Solutions</strong></p>
-                            </div>
-                        </section>
+                        <a class="btn" href="https://github.com/elfeenah/Recipe-Site-Traffic-Prediction" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </article>
-
-
-
-    <!-- Media Section -->
-    <section id="media" class="wrapper style2">
-        <div class="container">
-            <h2>Media</h2>
-            <p>Discover my gallery and delve into my latest blog posts.</p>
-        </div>
-        <!-- Gallery Section -->
-        <div class="gallery">
-            <div class="image">
-                <img src="images\IMG-20230314-WA0006.jpg" alt="Gallery Image 1"
-                    style="inline-size: 100%; max-inline-size: 300px;">
+     <!-- Project 9 -->
+     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="1.2s">
+        <div class="portfolio-wrap">
+            <div class="portfolio-img">
+                <img src="images\BTC.jpg" alt="Project 7 Image">
             </div>
-            <div class="image">
-                <img src="images\IMG_5323.jpg" alt="Gallery Image 2" style="inline-size: 100%; max-inline-size: 300px;">
-            </div>
-            <div class="image">
-                <img src="images\DSC_0101.jpg" alt="Gallery Image 3" style="inline-size: 100%; max-inline-size: 300px;">
-            </div>
-            <div class="image">
-                <img src="images\20221207_101719.jpg" alt="Gallery Image 3"
-                    style="inline-size: 100%; max-inline-size: 300px;">
-            </div>
-            <div class="image">
-                <img src="images\IMG_5523.jpg" alt="Gallery Image 3" style="inline-size: 100%; max-inline-size: 300px;">
-            </div>
+            <div class="portfolio-text">
+                <h3>Bitcoin Price Analysis Before the 2024 Halving</h3>
+                <p>Analysing Bitcoin's price movements pre-2024 halving using Python...</p>
+                <a class="btn" href="https://github.com/elfeenah/Employee-Attrition-Control" target="_blank">View Project</a>
+              </div>
              </div>
-            <div class="image">
-                <img src="images\2N2A0707.jpg" alt="Gallery Image 3" style="inline-size: 100%; max-inline-size: 300px;">
+         </div>
+        </div>               
+    </div>
+</div>
+<!-- Portfolio End -->
+
+
+<!-- Booking Start -->
+<div class="booking" id="booking">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Bookings</p>
+            <h2>I'm Open to Bookings</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="booking-item">
+                    <div class="booking-header">
+                        <h3>Booking for Speaking Events</h3>
+                    </div>
+                    <div class="booking-body">
+                        <p>I welcome invitations to speak at conferences, seminars, workshops or any event. I bring a passion for sharing knowledge, sparking engaging discussions and leaving a lasting impact on your audience. Let's collaborate to create a memorable and insightful event together.</p>
+                    </div>
+                    <div class="booking-footer">
+                        <a class="btn" href="https://calendly.com/nafisaidris/" target="_blank">Book Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="image">
-                <img src="images\DSC_0117.jpg" alt="Gallery Image 3" style="inline-size: 100%; max-inline-size: 300px;">
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="booking-item featured-item">
+                    <div class="booking-header">
+                        <h3>Free Mentorship</h3>
+                    </div>
+                    <div class="booking-body">
+                        <p>Are you an aspiring data analyst or data scientist looking to break into the tech industry? Contact me today to explore free mentorship opportunities. I provide guidance on portfolio reviews, career advice, and skill development to help you achieve your professional goals.</p>
+                    </div>
+                    <div class="booking-footer">
+                        <a class="btn" href="https://adplist.org/mentors/nafisa-lawal-idris" target="_blank">Book Now</a>
+                    </div>
+                </div>
             </div>
-             </div>
-            <div class="image">
-                <img src="images\DSC_8790.jpg" alt="Gallery Image 3" style="inline-size: 100%; max-inline-size: 300px;">
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="booking-item">
+                    <div class="booking-header">
+                        <h3>One-on-One Consultation</h3>
+                    </div>
+                    <div class="booking-body">
+                        <p>Seeking personalized guidance for your project? My "One-on-One Consultation" service offers exclusive access to address your specific concerns and objectives. Whether you need advice on data analytics, machine learning, or career development, I'm here to help you succeed.</p>
+                    </div>
+                    <div class="booking-footer">
+                        <a class="btn" href="https://adplist.org/mentors/nafisa-lawal-idris" target="_blank">Book Now</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</div>
+<!-- Booking End -->
 
-        <!-- Blog Section -->
-        <section id="blogs" class="wrapper style2">
-            <div class="container">
-                <header>
-                    <h2>Blog Posts</h2>
-                </header>
-                <div class="row">
-                    <!-- Blog 1 -->
-                    <div class="col-12 col-6-medium col-12-small">
-                        <div class="blog-post">
-                            <h3>My Journey: Overcoming Personal Challenges and Venturing into the World of Bitcoin
-                                Development</h3>
-                            <p>Published on <span class="date">2nd September, 2023</span></p>
-                            <p>Embarking on a transformative journey, I delve into the realm of Bitcoin development,
-                                overcoming personal challenges along the way. Join me as I share my experiences,
-                                insights, and the fascinating world of blockchain technology.</p>
-                            <a href="https://medium.com/@nafisaidris413/my-journey-from-personal-struggles-to-bitcoin-development-1b4e316b8638"
-                                class="button" style="background-color: purple; color: white;">Read More</a>
-                        </div>
+
+<!-- Media Section Starts-->
+<section id="media" class="wrapper style2">
+    <div class="container">
+        <h2>Media</h2>
+        <p>Discover my gallery</p>
+    </div>
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <div class="image">
+            <img src="images/IMG-20230314-WA0006.jpg" alt="Gallery Image 1" style="inline-size: 100%; max-inline-size: 300px;">
+        </div>
+        <div class="image">
+            <img src="images/IMG_5323.jpg" alt="Gallery Image 2" style="inline-size: 100%; max-inline-size: 300px;">
+        </div>
+        <div class="image">
+            <img src="images/DSC_0101.jpg" alt="Gallery Image 3" style="inline-size: 100%; max-inline-size: 300px;">
+        </div>
+        <div class="image">
+            <img src="images/20221207_101719.jpg" alt="Gallery Image 4" style="inline-size: 100%; max-inline-size: 300px;">
+        </div>
+        <div class="image">
+            <img src="images/IMG_5523.jpg" alt="Gallery Image 5" style="inline-size: 100%; max-inline-size: 300px;">
+        </div>
+        <div class="image">
+            <img src="images/2N2A0707.jpg" alt="Gallery Image 6" style="inline-size: 100%; max-inline-size: 300px;">
+        </div>
+        <div class="image">
+            <img src="images/DSC_0117.jpg" alt="Gallery Image 7" style="inline-size: 100%; max-inline-size: 300px;">
+        </div>
+        <div class="image">
+            <img src="images/DSC_8790.jpg" alt="Gallery Image 8" style="inline-size: 100%; max-inline-size: 300px;">
+        </div>
+    </div>
+</section>
+<!-- Media Section Ends -->
+
+<!-- Lightbox Element -->
+<div id="lightbox" class="lightbox"></div>
+
+<!-- Include the script.js file -->
+<script src="js\main.js"></script>
+
+        
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="path/to/your/style.css">
+</head>
+<body>
+
+<!-- Features Start -->
+<div class="features" id="features">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Features</p>
+            <h2>Explore My Achievements</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-pencil"></i>
                     </div>
-                    <!-- Blog 2 -->
-                    <div class="col-12 col-6-medium col-12-small">
-                        <div class="blog-post">
-                            <h3>Unlocking Potential: Explore the Arewa Data Community in Northern Nigeria</h3>
-                            <p>Published on <span class="date">1st October, 2023</span></p>
-                            <p>Embark on a journey to discover the transformative power of the Arewa Data Community in
-                                Northern Nigeria. Join me as I delve into the initiatives, innovations, and
-                                collaborative spirit driving data-driven advancements in the region. Learn how this
-                                vibrant community is shaping the future through data analytics and technology.</p>
-                            <a href="https://medium.com/@nafisaidris413/discover-the-power-of-arewa-data-community-northern-nigeria-24effc7ae9d4"
-                                class="button" style="background-color: purple; color: white;">Read More</a>
-                        </div>
+                    <div class="feature-text">
+                        <h3>DevCareer IWD2024</h3>
+                        <p>Read about my participation in DevCareer IWD2024 event.</p>
+                        <a class="btn" href="https://medium.com/devcareers/devcareer-iwd2024-e73ab9de57b4" target="_blank">Read More</a>
                     </div>
-                    <!-- Blog 3 -->
-                    <div class="col-12 col-6-medium col-12-small">
-                        <div class="blog-post">
-                            <h3>A Step-by-Step Guide for Beginners to Start Their Career in Business Analysis</h3>
-                            <p>Published on <span class="date">2nd October, 2023</span></p>
-                            <p>Embarking on a career in business analysis can be a transformative journey. In this
-                                comprehensive guide, I outline the essential steps and strategies for beginners to
-                                kick-start their career in business analysis. From understanding core concepts to
-                                mastering analytical tools, this step-by-step guide offers invaluable insights and
-                                resources to help aspiring professionals navigate the complexities of the business
-                                analysis field. Join me in exploring the fundamental skills, industry trends, and
-                                real-world applications that will empower you to excel in the dynamic world of business
-                                analysis.</p>
-                            <a href="https://medium.com/@nafisaidris413/a-step-by-step-guide-for-beginners-to-start-their-career-in-business-analysis-e97d8bac67"
-                                class="button" style="background-color: purple; color: white;">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="feature-item featured-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>YouTube Live - 2sau0SMgKro</h3>
+                        <p>Watch my session on YouTube Live - 2sau0SMgKro.</p>
+                        <a class="btn" href="https://www.youtube.com/live/2sau0SMgKro?si=l9JMHiMbu6rmEToa" target="_blank">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>YouTube Live - mxaKdP5okpk</h3>
+                        <p>Watch my session on YouTube Live - mxaKdP5okpk.</p>
+                        <a class="btn" href="https://www.youtube.com/live/mxaKdP5okpk?si=Igsjx2LRaqt7hh9_" target="_blank">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>YouTube Live - 9Hr3CtVewUg</h3>
+                        <p>Watch my session on YouTube Live - 9Hr3CtVewUg.</p>
+                        <a class="btn" href="https://www.youtube.com/live/9Hr3CtVewUg?si=LpCRUFiZKTNfXiNr" target="_blank">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-newspaper"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Daily Episode NG</h3>
+                        <p>Read about my interview on Daily Episode NG.</p>
+                        <a class="btn" href="https://dailyepisode.ng/breaking-barriers-how-nafisa-defies-stereotypes-ushers-hope-for-northern-nigerias-technological-future/" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>YouTube - 68JGvLqYVNE</h3>
+                        <p>Watch my session on YouTube - 68JGvLqYVNE.</p>
+                        <a class="btn" href="https://youtu.be/68JGvLqYVNE?si=wOtcvnOWI3VolZz3" target="_blank">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-newspaper"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>News NG</h3>
+                        <p>Read about my recognition on News NG.</p>
+                        <a class="btn" href="https://news.ng/nafisa-lawal-idris-emerges-northern-nigerias-first-female-data-scientist/" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa fa-newspaper"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Daily Trust</h3>
+                        <p>Read about my contributions on Daily Trust.</p>
+                        <a class="btn" href="https://dailytrust.com/young-entrepreneurs-tasked-on-business-ideas/" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+        <!-- Contact Start -->
+        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <!-- Contact End -->
 
-
-
-        <!-- Contact Section -->
-        <article id="contact" class="wrapper style3">
-            <div class="container">
-                <header>
-                    <h2>Contact</h2>
-                </header>
-                <form id="contact-form">
-                    <div class="row gtr-uniform">
-                        <div class="col-6 col-12-xsmall">
-                            <input type="text" name="name" id="name" placeholder="Name" required />
-                        </div>
-                        <div class="col-6 col-12-xsmall">
-                            <input type="email" name="email" id="email" placeholder="Email" required />
-                        </div>
-                        <div class="col-12">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" required />
-                        </div>
-                        <div class="col-12">
-                            <textarea name="message" id="message" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="col-12">
-                            <input type="submit" value="Send Message" class="button primary-purple" />
-                        </div>
-                        <form id="contact-form" class="contact-form">
+<!-- Blog Section -->
+<section id="blog" class="wrapper style2">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>From Blog</p>
+            <h2>Latest Articles</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-text">
+                        <h2>Developing a Predictive Analytics Model</h2>
+                        <p>
+                            Dive into the world of predictive analytics with my latest article where I explore the development process and its applications.
+                        </p>
+                        <a class="btn" href="https://medium.com/@nafisaidris413/developing-a-predictive-analytics-model-6b750f1a183d" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
                     </div>
-                </form>
-                <!-- Include jQuery library -->
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-                <script>
-                    $(document).ready(function () {
-                        // Handle form submission
-                        $("#contact-form").submit(function (event) {
-                            event.preventDefault();
-
-                            // Serialize the form data
-                            var formData = $(this).serialize();
-
-                            // Send a POST request to the server-side PHP script
-                            $.ajax({
-                                type: "POST",
-                                url: "process_form.php", // Specify the URL of your PHP script
-                                data: formData,
-                                success: function (response) {
-                                    // Display the response message in the form-message div
-                                    $("#form-message").html(response);
-                                }
-                            });
-                        });
-                    });
-                </script>
-
+                </div>
             </div>
-        </article>
-        <footer>
-            <p class="cp-text">
-                © Copyright 2023 Nafisa Lawal Idris. All rights reserved.
-            </p>
+            <div class="col-lg-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-text">
+                        <h2>Handling Different Data Formats and Sources in Data Cleaning Projects</h2>
+                        <p>
+                            Learn effective strategies for managing diverse data formats and sources in your data cleaning projects.
+                        </p>
+                        <a class="btn" href="https://medium.com/@nafisaidris413/handling-different-data-formats-and-sources-in-data-cleaning-projects-0094b98ef9ac" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-text">
+                        <h2>Bitcoin Price Analysis Before the 2024 Halving</h2>
+                        <p>
+                            Explore the trends and analysis of Bitcoin's price movements before the 2024 halving event.
+                        </p>
+                        <a class="btn" href="https://medium.com/@nafisaidris413/bitcoin-price-analysis-before-the-2024-halving-d0e54fa29de7" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="blog-text">
+                        <h2>Unraveling Bitcoin Address Types Using Python</h2>
+                        <p>
+                            Learn how to decode and analyze different types of Bitcoin addresses using Python.
+                        </p>
+                        <a class="btn" href="https://medium.com/@nafisaidris413/unraveling-bitcoin-address-types-using-python-443da9033ab5" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="blog-text">
+                        <h2>Nafisa Lawal Idris 2023: A Year of Growth, Challenges, and Achievements</h2>
+                        <p>
+                            Reflect on my journey through 2023, highlighting growth, challenges, and major achievements.
+                        </p>
+                        <a class="btn" href="https://medium.com/@nafisaidris413/nafisa-lawal-idris-2023-a-year-of-growth-challenges-and-achievements-507cfc18d3bd" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="1.1s">
+                    <div class="blog-text">
+                        <h2>Discover the Power of Arewa Data Community in Northern Nigeria</h2>
+                        <p>
+                            Explore how the Arewa Data Community is shaping Northern Nigeria's tech landscape.
+                        </p>
+                        <a class="btn" href="https://medium.com/@nafisaidris413/discover-the-power-of-arewa-data-community-northern-nigeria-24effc7ae9d4" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog End -->
 
-            <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-        </footer>
-    </section>
+
+<!-- Footer Start -->
+<footer class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer-info">
+                <h2>Nafisa Lawal Idris</h2>
+                <h3>Nigeria</h3>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nafisa-lawal-idris/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/FeenahNafeesah" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/nafisalawalidris" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://medium.com/@nafisaidris413" target="_blank"><i class="fab fa-medium"></i></a>
+                    <a href="https://www.kaggle.com/nafisalawalidris" target="_blank"><i class="fab fa-kaggle"></i></a>
+                </div>
+            </div>
+    <div class="container copyright">
+        <p>&copy; 2024 <a href="#">portfolio</a>, All Rights Reserved | Designed By Nafisa Lawal Idris</p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Back to top button -->
+<a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="easing\easing.min.js"></script>
+<script src="wow\wow.min.js"></script>
+<script src="waypoints\waypoints.min.js"></script>
+<script src="typed\typed.min.js"></script>
+<script src="owlcarousel\owl.carousel.min.js"></script>
+<script src="isotope\isotope.pkgd.min.js"></script>
+<script src="lightbox\js\lightbox.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="jqBootstrapValidation.min.js"></script>
+<script src="contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js\main.js"></script>
 </body>
-
 </html>
