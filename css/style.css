@@ -1,4 +1,3 @@
-/*******************************/
 /********* General CSS *********/
 /*******************************/
 body {
@@ -129,6 +128,7 @@ a:focus {
     color: #414141;
 }
 
+
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
@@ -247,7 +247,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(https://github.com/nafisalawalidris/13/blob/b965fbda1829ea7fb3cf3e7783047850474db37c/images/Feenah.jpg);
+    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(images/Feenah.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,18 +259,17 @@ a:focus {
 
 .profile .profile-image {
     position: relative;
-    text-align: right;
-    padding-right: 75px;
+    text-align: center; /* Center the image */
 }
 
 .profile .profile-image img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 78%; /* Adjust the width of the image */
+    max-height: 90%; /* Adjust the height of the image */
 }
 
 .profile .profile-content {
     position: relative;
-    padding-left: 75px;
+    padding: 0 75px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -305,10 +304,10 @@ a:focus {
     display: none;
 }
 
-.profile .profile-text .typed-cursor {
+.profile .profile-text .typed-cursor{
+    color: #ffffff;
     font-size: 35px;
     font-weight: 300;
-    color: #ffffff;
 }
 
 .profile .profile-btn .btn {
@@ -327,6 +326,24 @@ a:focus {
 
 .profile .profile-btn .btn:first-child {
     margin-right: 10px;
+}
+
+.profile .social-links h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile .social-links a {
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.profile .social-links a:hover {
+    color: #070606;
 }
 
 @media (max-width: 991.98px) {

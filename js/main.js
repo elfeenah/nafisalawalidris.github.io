@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
     
-    // loader
+    // Loader
     var loader = function () {
         setTimeout(function () {
             if ($('#loader').length > 0) {
@@ -10,12 +10,10 @@
         }, 1);
     };
     loader();
-    
-    
-    // Initiate the wowjs
+
+    // Initiate WOW.js
     new WOW().init();
-    
-    
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
@@ -28,8 +26,7 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-    
-    
+
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
@@ -38,13 +35,11 @@
             $('.navbar').removeClass('nav-sticky');
         }
     });
-    
-    
+
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
-            
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 45
             }, 1500, 'easeInOutExpo');
@@ -55,8 +50,7 @@
             }
         }
     });
-    
-    
+
     // Typed Initiate
     if ($('.hero .hero-text h2').length == 1) {
         var typed_strings = $('.hero .hero-text .typed-text').text();
@@ -68,17 +62,14 @@
             loop: true
         });
     }
-    
-    
+
     // Skills
     $('.skills').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
-    
-    
-    
+
     // Portfolio filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
@@ -90,10 +81,10 @@
         $(this).addClass('filter-active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
+
 })(jQuery);
 
-// Mdeia filter
+// Media filter
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('#media .gallery .image');
     const lightbox = document.createElement('div');
@@ -124,9 +115,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// features filter 
+// Features filter
 document.addEventListener('DOMContentLoaded', function() {
-    // Add any specific JavaScript functionality for the features section here
     const featureItems = document.querySelectorAll('.feature-item');
 
     featureItems.forEach(item => {
@@ -140,9 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-// Contact filter 
-
+// Contact form
 $(function() {
     $("#contactForm").submit(function(event) {
         event.preventDefault();
@@ -150,7 +138,7 @@ $(function() {
 
         $.ajax({
             type: "POST",
-            url: "sendEmail.php", // Path to your PHP script
+            url: "sendEmail.php",
             data: formData,
             success: function(response) {
                 $("#success").html(response);
@@ -167,35 +155,42 @@ $(function() {
 });
 
 // Blog filters
-
 $(function() {
-    // Smooth scroll for links with hashes
     $('a.smooth-scroll').click(function(event) {
-        // On-page links
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            // Figure out element to scroll to
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
             if (target.length) {
-                // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
                     scrollTop: target.offset().top
                 }, 1000, function() {
-                    // Callback after animation
-                    // Must change focus!
                     var $target = $(target);
                     $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
+                    if ($target.is(":focus")) {
                         return false;
                     } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
+                        $target.attr('tabindex', '-1');
+                        $target.focus();
                     };
                 });
             }
         }
     });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var texts = document.querySelectorAll('#slideshow-text span');
+    var index = 0;
+
+    function showNextText() {
+        texts[index].style.display = 'none';
+        index = (index + 1) % texts.length;
+        texts[index].style.display = 'inline';
+    }
+
+    texts[index].style.display = 'inline';
+    setInterval(showNextText, 3000); // Change text every 3 seconds
 });
 
