@@ -1383,12 +1383,12 @@ document.addEventListener('DOMContentLoaded', function () {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
+    margin-top: 10px;
     background: #EF233C;
 }
 
 .footer .container-fluid {
-    padding: 60px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .footer .footer-info {
@@ -1506,5 +1506,69 @@ document.addEventListener('DOMContentLoaded', function () {
         font-size: 16px;
         line-height: 16px;
         padding: 0 5px;
+    }
+}
+
+
+/* Base styles for desktop */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header, .footer {
+    padding: 20px;
+    background-color: #EF233C;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    .header, .footer {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .footer-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-info h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Styles for very small devices like phones */
+@media (max-width: 480px) {
+    .header, .footer {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .footer-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-info h3 {
+        font-size: 0.8rem;
     }
 }
