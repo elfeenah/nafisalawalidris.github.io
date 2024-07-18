@@ -238,6 +238,7 @@ a:focus {
 }
 
 
+
 /*******************************/
 /********** Profile CSS ***********/
 /*******************************/
@@ -247,7 +248,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(images/Feenah.jpg);
+    background: linear-gradient(rgba(239, 35, 60, 0.95), rgba(239, 35, 60, 0.95)), url(images/Feenah.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,7 +272,7 @@ a:focus {
     position: relative;
     padding: 0 75px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -285,7 +286,7 @@ a:focus {
 
 .profile .profile-text h1 {
     color: #ffffff;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 15px;
@@ -294,38 +295,45 @@ a:focus {
 .profile .profile-text h2 {
     display: inline-block;
     margin: 0;
-    height: 35px;
     color: #ffffff;
     font-size: 35px;
     font-weight: 600;
 }
 
-.profile .profile-text .typed-text {
-    display: none;
+/* Slideshow Container CSS */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center; /* Center the text */
 }
 
-.profile .profile-text .typed-cursor{
-    color: #ffffff;
-    font-size: 35px;
-    font-weight: 300;
+.slideshow-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* Adjust height as needed */
 }
 
-.profile .profile-btn .btn {
-    margin-top: 35px;
-    color: #EF233C;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
+.slideshow-text span {
+    color: #ffffff; /* White color */
+    font-size: 25px; /* Adjust size as needed */
+    font-weight: 600; /* Make text bold */
+    margin: 0 10px; /* Space between items */
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.profile .profile-btn .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
+/* Animation */
+@keyframes slide {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
-.profile .profile-btn .btn:first-child {
-    margin-right: 10px;
+.slideshow-text span {
+    animation: slide 3s infinite;
 }
 
 .profile .social-links h4 {
@@ -346,6 +354,7 @@ a:focus {
     color: #070606;
 }
 
+/* Responsive Design Adjustments */
 @media (max-width: 991.98px) {
     .profile {
         padding-top: 60px;
@@ -365,7 +374,6 @@ a:focus {
     
     .profile .profile-text h2 {
         font-size: 25px;
-        height: 25px;
     }
     
     .profile .profile-btn .btn {
@@ -397,7 +405,6 @@ a:focus {
     
     .profile .profile-text h2 {
         font-size: 22px;
-        height: 22px;
     }
     
     .profile .profile-btn .btn {
@@ -417,70 +424,11 @@ a:focus {
     
     .profile .slideshow-item {
         font-size: 18px;
-        height: 18px;
     }
     
     .profile .profile-btn .btn {
         padding: 8px 10px;
         letter-spacing: 0;
-    }
-}
-
-
-
-/*******************************/
-/******* Section Header ********/
-/*******************************/
-.section-header {
-    position: relative;
-    margin-bottom: 45px;
-}
-
-.section-header p {
-    display: inline-block;
-    margin: 0 30px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: #ffffff;
-}
-
-.section-header p::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    top: 11px;
-    right: 0;
-    left: -30px;
-    background: #EF233C;
-    z-index: -1;
-}
-
-.section-header p::after {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 3px;
-    top: 11px;
-    left: 3px;
-    background: #EF233C;
-    z-index: 1;
-}
-
-.section-header h2 {
-    margin: 0;
-    position: relative;
-    font-size: 45px;
-    font-weight: 700;
-}
-
-@media (max-width: 767.98px) {
-    .section-header h2 {
-        font-size: 30px;
     }
 }
 
