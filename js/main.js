@@ -63,12 +63,24 @@
         });
     }
 
-    // Skills
-    $('.skills').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
+    
+// Skills
+$('.skills').waypoint(function () {
+    $('.progress .progress-bar').each(function () {
+        $(this).css("width", $(this).attr("aria-valuenow") + '%');
+    });
+}, {offset: '80%'});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const skillPercentages = document.querySelectorAll('.skill-percentage');
+    skillPercentages.forEach(function (element) {
+        const value = parseInt(element.getAttribute('data-value'), 10);
+        if (value > 100) {
+            element.style.color = 'red';
+        }
+    });
+});
+
 
     // Portfolio filter
     var portfolioIsotope = $('.portfolio-container').isotope({
