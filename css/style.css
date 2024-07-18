@@ -127,7 +127,9 @@ a:focus {
 .back-to-top:hover i {
     color: #414141;
 }
-
+section {
+    padding: 50px 0; /* Adjust padding for top and bottom spacing */
+}
 
 /**********************************/
 /*********** Nav Bar CSS **********/
@@ -802,14 +804,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 }
 
-/* Styling for Experience Section */
 .experience {
     padding: 20px; /* Add padding inside the section */
     margin-top: 2px; /* Add space between services and experience sections */
 }
 
-
-
+.experience {
+    background-color: #f0f0f0; /* Light background color for contrast */
+    border-bottom: 2px solid #ddd; /* Border to separate from the portfolio */
+    margin-bottom: 30px; /* Space between the experience section and portfolio */
+}
 
 /*******************************/
 /******** Portfolio CSS ********/
@@ -931,6 +935,31 @@ document.addEventListener('DOMContentLoaded', function () {
     border-color: #EF233C;
 }
 
+.portfolio {
+    padding: 50px 0; /* Top and bottom padding */
+}
+
+.portfolio .section-header {
+    margin-bottom: 50px; /* Space below the header */
+}
+
+.portfolio .portfolio-container {
+    margin-top: 30px; /* Space above the portfolio items */
+}
+
+.portfolio .portfolio-item {
+    margin-bottom: 40px; /* Space below each portfolio item */
+}
+
+.portfolio {
+    background-color: #ffffff; /* White background for clarity */
+    border-top: 2px solid #ddd; /* Border to separate from the experience */
+    border-bottom: 2px solid #ddd; /* Optional border to separate from the bookings */
+    padding: 50px 0; /* Ensure padding for top and bottom */
+}
+
+
+
 
 /*******************************/
 /********* Booking CSS *********/
@@ -1033,6 +1062,11 @@ document.addEventListener('DOMContentLoaded', function () {
     box-shadow: inset 0 0 0 2px #EF233C; /* Border on hover */
 }
 
+.bookings {
+    background-color: #f9f9f9; /* Slightly different background for differentiation */
+    border-top: 2px solid #ddd; /* Border to separate from the portfolio */
+    padding: 50px 0; /* Ensure padding for top and bottom */
+}
 
 /*******************************/
 /********* Media CSS **********/
@@ -1041,6 +1075,8 @@ document.addEventListener('DOMContentLoaded', function () {
     background-color: #f9f9f9;
     padding: 50px 0;
     text-align: center;
+    margin-top: 50px; /* Space from the section above */
+    margin-bottom: 50px; /* Space to the section below */
 }
 
 #media h2 {
@@ -1114,6 +1150,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 
 
+
 /*******************************/
 /*********** Features CSS **********/
 /*******************************/
@@ -1184,24 +1221,30 @@ document.addEventListener('DOMContentLoaded', function () {
     background-size: contain;
 }
 
+.contact .section-header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.contact .section-header p {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.contact .section-header h2 {
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
     background: #EF233C;
 }
 
-.contact .contact-form input {
-    color: #ffffff;
-    padding: 15px 0;
-    background: none;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
-}
-
+.contact .contact-form input,
 .contact .contact-form textarea {
     color: #ffffff;
-    height: 90px;
     padding: 15px 0;
     background: none;
     border-radius: 0;
@@ -1209,14 +1252,10 @@ document.addEventListener('DOMContentLoaded', function () {
     border-bottom: 1px solid rgba(256, 256, 256, .5);
 }
 
-.contact .contact-form .form-control::placeholder {
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder {
     color: #ffffff;
     opacity: 1;
-}
-
-.contact .contact-form .form-control:-ms-input-placeholder,
-.contact .contact-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
 }
 
 .contact .contact-form .btn {
@@ -1233,13 +1272,21 @@ document.addEventListener('DOMContentLoaded', function () {
     border-color: #ffffff;
 }
 
-.contact .help-block ul {
+.contact .help-block {
     margin: 0;
     padding: 0;
     list-style-type: none;
     font-size: 14px;
     font-style: italic;
     color: #ffffff;
+}
+
+.contact .help-block.error {
+    color: #ffdddd;
+}
+
+.contact .help-block.success {
+    color: #d4edda;
 }
 
 @media (max-width: 767.98px) {

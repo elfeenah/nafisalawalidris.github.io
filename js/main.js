@@ -63,7 +63,7 @@
         });
     }
 
-    
+
 // Skills
 $('.skills').waypoint(function () {
     $('.progress .progress-bar').each(function () {
@@ -95,6 +95,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 })(jQuery);
+
+
 
 // Media filter
 document.addEventListener("DOMContentLoaded", function() {
